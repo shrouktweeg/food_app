@@ -2,5 +2,5 @@ class Constants{
 
 }
 class ImagesConstant{
-  static String person='assets/images/person.png';
+  static const String person="assets/images/person.png";
 }
