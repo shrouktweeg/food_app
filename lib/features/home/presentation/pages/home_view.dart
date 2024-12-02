@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/features/home/presentation/widgets/categories_widget.dart';
 import 'package:food_app/features/home/presentation/widgets/head_widget.dart';
 import 'package:food_app/features/home/presentation/widgets/search_widget.dart';
 
@@ -7,7 +8,6 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var theme=Theme.of(context);
     return SafeArea(
       child: Scaffold(
         body: Padding(
@@ -15,9 +15,10 @@ class HomeView extends StatelessWidget {
           child: ListView(
             children:  const [
             HeadWidget(),
+             SizedBox(height: 10,),
              SearchWidget(),
+              CategoriesWidgets(),
             ]
-
           ),
         ),
 
@@ -25,3 +26,4 @@ class HomeView extends StatelessWidget {
     );
   }
 }
+
