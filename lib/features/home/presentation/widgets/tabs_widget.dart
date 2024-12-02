@@ -11,11 +11,9 @@ class TabsWidgets extends StatefulWidget {
 
 class _TabsWidgetsState extends State<TabsWidgets> {
   int selectedIndex=0;
-  bool isSelected=false;
   @override
   Widget build(BuildContext context) {
     return TabBar(
-
         indicatorPadding: EdgeInsets.zero,
         labelColor: ColorsPalette.kPrimaryColor,
         dividerColor: Colors.transparent,
@@ -30,7 +28,6 @@ class _TabsWidgetsState extends State<TabsWidgets> {
         onTap: (index){
           setState(() {
             selectedIndex=index;
-            isSelected=true;
           });
         },
         tabs:  [
